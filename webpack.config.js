@@ -1,5 +1,7 @@
+var webpack = require('webpack');
+
 module.exports = {
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
         path: './',
         filename: 'index.js'
@@ -17,5 +19,16 @@ module.exports = {
                 presets: ['es2015', 'react']
             }
         }]
-    }
+    },
+    babel: {
+        presets: ['es2015', 'stage-0', 'react']
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+        // new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', Infinity) // 这是第三方库打包生成的文件
+    ]
 }
