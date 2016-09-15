@@ -8,4 +8,5 @@ body {
     overflow: hidden;
     cursor: default;
     margin: 0;
+    border: 2px solid blue;
 }

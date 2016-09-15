@@ -1,10 +1,12 @@
 import React from 'react';
 import Today from './today';
 import ClassNames from 'classnames';
-import Chart from './chart';
+import Chart from './charts';
 
 // 引入标准Fetch及IE兼容依赖
 import 'whatwg-fetch';
+
+
 
 export default class panel extends React.Component {
     constructor(props) {
@@ -34,7 +36,11 @@ export default class panel extends React.Component {
     }
 
 
+
     render() {
+        var sname = 'theme01';
+        require ('./theme/theme01/'+sname+'.js');
+        //import './theme/theme01/theme01.js';
         let head_view_style = {
             height: this.state.vh * this.state.head_h,
             border: '1px solid red'

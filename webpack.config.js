@@ -8,17 +8,22 @@ module.exports = {
     },
     devServer: {
         inline: true,
-        port: 3333
+        port: 5555
     },
     module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel',
-            query: {
-                presets: ['es2015', 'react']
-            }
-        }]
+        loaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel'
+                // query: {
+                //     presets: ['es2015', 'react']
+                // }
+            },
+            {   test: /\.css$/, 
+                loader: 'style-loader!css-loader?sourceMap' 
+            },
+        ]
     },
     babel: {
         presets: ['es2015', 'stage-0', 'react']

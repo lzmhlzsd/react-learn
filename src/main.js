@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import Charts from './components/charts';
 import Panel from './components/panel';
 	
-	
+	import './main.css'
 
 ReactDom.render(<Panel />, document.getElementById('container-body'));
 
