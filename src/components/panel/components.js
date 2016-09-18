@@ -1,4 +1,5 @@
 import React from 'react';
+import Today from '../today/today';
 
 export default class component extends React.Component {
 	constructor(props){
@@ -6,11 +7,16 @@ export default class component extends React.Component {
 	}
 
 	render() {
-		// switch(this.props.type){
-		// 	case ""
-		// }
+		let child_comp;
+		switch(this.props.type){
+			case "today":
+				child_comp = <Today />;
+				break;
+		}
 		return (
-			<div>{this.props.type}</div>
+			<div>
+				{child_comp}
+			</div>
 			)
 	}
 }
