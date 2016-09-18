@@ -8,5 +8,13 @@ body {
     overflow: hidden;
     cursor: default;
     margin: 0;
-    border: 2px solid blue;
+}
+
+.panel #loader {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(153, 153, 153);
+    padding: 40vh;
+    height: 914px;
+    background: rgb(204, 204, 204);
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Charts from './components/charts';
-import Panel from './components/panel';
-	
-	import './main.css'
 
-ReactDom.render(<Panel />, document.getElementById('container-body'));
+import Panel from './components/panel/panel';
+
+import './main.css';
+
+ReactDom.render( < Panel / > , document.getElementById('container-body'));
 
 // ReactDom.render( < App cat={5}  / > , 
 // 	document.getElementById('app'));
@@ -19,4 +20,3 @@ ReactDom.render(<Panel />, document.getElementById('container-body'));
 
 // var dataSet = [3, 20, 30, 0, 0, 0];
 // ReactDom.render( <Charts name = "World" data = { dataSet }/>,  document.getElementById('app3'));
-

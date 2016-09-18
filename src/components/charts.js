@@ -80,7 +80,7 @@ export default class charts extends React.Component {
             height: '300px'
         }
         return ( < div >
-            < h1 > Hello { this.props.name } < /h1>   < div id = {this.state.id}
+            < div id = {this.state.id}
             style = { divStyle } > < /div> < /div>
         )
     }

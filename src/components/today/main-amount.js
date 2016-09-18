@@ -9,7 +9,7 @@ export default class Amount extends React.Component {
         }
         console.log('Amount:', this.state);
     }
-
+    
     componentDidMount() {
         
     }

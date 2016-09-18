@@ -1,0 +1,10 @@
+.today {
+    position: relative;
+    height: 100%;
+}
+
+.today .count {
+    left: 0.5rem;
+    position: absolute;
+    bottom: 0;
+}
