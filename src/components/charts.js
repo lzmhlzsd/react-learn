@@ -6,7 +6,6 @@ export default class charts extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            type: this.props.type,
             data: this.props.data,
             id: _.uniqueId('chart_') //uuid.v4()
         }
@@ -68,6 +67,8 @@ export default class charts extends React.Component {
     componentWillUpdate(nextProps, nextState) {
         //console.log(this.state.data);
         console.log('组件即将更新')
+
+
         this.drawCharts(this.state.data);
     }
 
@@ -77,11 +78,11 @@ export default class charts extends React.Component {
 
     render() {
         let divStyle = {
-            height: '300px'
+            height: '100%'
         }
-        return ( < div >
+        return ( 
             < div id = {this.state.id}
-            style = { divStyle } > < /div> < /div>
+            style = { divStyle } > < /div> 
         )
     }
 }

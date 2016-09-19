@@ -63,7 +63,7 @@ export default class panel extends React.Component {
         let theme = 'theme02';
         let panel = '';
         if (!u.isEmpty(this.state.config)) {
-            theme = 'theme' + this.state.config.theme;
+            theme = 'theme' + this.state.config.panel.theme;
             switch(this.state.config.panel.type){
 	        	case 1:
 		        	panel = <Panel1 {...this.state}/>;

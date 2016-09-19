@@ -1,0 +1,15 @@
+.history table{
+	width: 100%;
+	font-size: 1.8rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.history .splid{
+    width: 2rem;
+    border-right: 0.1rem solid #ccc;
+}
+
+.history td{
+	text-align: right;
+}

@@ -7,7 +7,7 @@ export default class Amount extends React.Component {
         this.state = {
             id: _.uniqueId('_')
         }
-        console.log('Amount:', this.state);
+        //console.log('Amount:', this.state);
     }
     
     componentDidMount() {

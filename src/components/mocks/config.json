@@ -1,39 +1,38 @@
 {
-	"theme": "01",
     "panel": {
-        "type": 1,
+        "type": 1,   
         "panel_ids": ["01", "02", "03"],
-        "theme": "01"
+        "theme": "02"
     },
     "components": [{
-        "type": "charts_today",
-        "to_panel": "02"
-    }, {
         "type": "today",
         "to_panel": "01"
+    }, {
+        "type": "charts_today",
+        "to_panel": "02"
     }, {
         "type": "history",
         "to_panel": "03"
     }],
     "data": {
         "current": [{
-            "amount": "4359.90",
-            "count": "74",
+            "amount": "94359.90",
+            "count": "174",
             "item": "0"
         }, {
-            "amount": "964.60",
+            "amount": "85964.60",
             "count": "27",
             "item": "1"
         }, {
-            "amount": "1325.10",
+            "amount": "52325.10",
             "count": "26",
             "item": "2"
         }, {
-            "amount": "589.40",
+            "amount": "3589.40",
             "count": "15",
             "item": "3"
         }, {
-            "amount": "1159.65",
+            "amount": "21159.65",
             "count": "13",
             "item": "4"
         }, {
@@ -74,7 +73,7 @@
             "item": "13"
         }, {
             "amount": "24700.10",
-            "count": "109",
+            "count": "309",
             "item": "14"
         }],
         "prev": [{

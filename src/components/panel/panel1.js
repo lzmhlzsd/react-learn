@@ -16,20 +16,9 @@ export default class panel extends React.Component {
             head_h: 0.15,
             data_h: 0.50,
             bottom_h: 0.35,
-            interval: 2,
-            theme: 'theme01',
-            chart: 1,
-            api_base_url: "https://api.teegon.com/",
-            token: "m3ypxoj4hbr3h2oawlbn7eom",
-            today_data: {
-                amount: 0,
-                count: 0
-            },
-            chart_data: {},
-            init: true,
-            config: {}
+            interval: 2
         }
-        console.log('rem:', this.state.rem);
+        //console.log('rem:', this.state.rem);
     }
 
 
@@ -47,7 +36,7 @@ export default class panel extends React.Component {
             border: '0px solid red'
         }
 
-        console.log(this.props);
+        //console.log(this.props);
 
         let compents = [], panel_ids = this.props.config.panel.panel_ids;
         for(var i = 0; i < panel_ids.length; i++ ){
@@ -63,13 +52,13 @@ export default class panel extends React.Component {
         return ( 
             <div>
                 <div className = {'head-view panel' + this.props.config.panel.panel_ids[0]} style = { head_view_style } >
-                    <Component type = {compents[0]}/>
+                    <Component type = {compents[0]} data = {this.props.config} rem = {this.state.rem}/>
                 </div>
                 <div className = {'main-view panel' + this.props.config.panel.panel_ids[1]} style = { main_view_stype } >
-                    <Component type = {compents[1]}/>
+                    <Component type = {compents[1]} data = {this.props.config} rem = {this.state.rem}/>
                 </div > 
                 <div className = {'bottom-view panel' + this.props.config.panel.panel_ids[2]} style = { bottom_view_stype } > 
-                    <Component type = {compents[2]}/>
+                    <Component type = {compents[2]} data = {this.props.config} rem = {this.state.rem}/>
                 </div> 
             </div>
         )

@@ -18,3 +18,11 @@ body {
     height: 914px;
     background: rgb(204, 204, 204);
 }
+
+.component {
+    height:  100%;
+}
+
+.charts{
+    padding: 0 0.5rem;
+}

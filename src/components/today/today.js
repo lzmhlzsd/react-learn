@@ -9,10 +9,11 @@ export default class Today extends React.Component {
     }
 
     render() {
+
         return (
     		<div className="today">
-    			<Mainamount data = { this.props.data.amount } />
-    			<Count data = { this.props.data.count } />
+    			<Mainamount data = { this.props.amount } />
+    			<Count data = { this.props.count } />
     		</div>
 
         	)
