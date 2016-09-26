@@ -6,3 +6,16 @@
     height: 914px;
     background: rgb(204, 204, 204);
 }
+
+div{
+	box-sizing:border-box
+}
+
+.col{
+	display: inline-block;
+    overflow: hidden;
+}
+
+.component{
+	position: relative;
+}

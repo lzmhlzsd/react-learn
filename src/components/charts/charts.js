@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from "lodash";
+import u from 'underscore';
 
 export default class charts extends React.Component {
     constructor(props) {
@@ -48,13 +49,13 @@ export default class charts extends React.Component {
                     data: dataSet.series[0].data,
                     hoverAnimation: false,
                     symbolSize: dataSet.rem * 1,
-                    showSymbol: true,
+                    showSymbol: true
                 }, {
                     name: dataSet.series[1].name,
                     type: 'line',
                     data: dataSet.series[1].data,
                     hoverAnimation: false,
-                    showSymbol: false,
+                    showSymbol: false
                 }]
             }
             //更新chart
@@ -63,18 +64,19 @@ export default class charts extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (this.state.theme != this.theme) {
+        if (this.state.theme != nextProps.theme) {
             this.setState({
                 theme: nextProps.theme,
                 data: nextProps.data,
             });
             require('./charts_theme' + nextProps.theme + '.js');
             this.myChart = echarts.init(document.getElementById(this.state.id), nextProps.theme);
+            //this.drawCharts(nextProps.data);
         }
     }
 
     componentWillUpdate(nextProps, nextState) {
-        this.drawCharts(this.props.data);
+        this.drawCharts(nextProps.data);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -82,9 +84,12 @@ export default class charts extends React.Component {
     }
 
     render() {
-        let divStyle = {
+        //var divStyle = u.extend({height: '100%'}, this.props.dstyle);
+        var divStyle = {
             height: '100%'
         }
+        console.log(divStyle)
+        
         return ( < div className="charts" id = { this.state.id }
             style = { divStyle } > < /div> 
         )

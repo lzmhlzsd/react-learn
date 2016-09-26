@@ -1,0 +1,1 @@
+window.barrage.option.hsl.l = [70, 100];

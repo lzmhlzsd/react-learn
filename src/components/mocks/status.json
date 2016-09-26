@@ -1,0 +1,244 @@
+{
+  "result": {
+    "date": "2016/9/20",
+    "status": {
+      "day": {
+        "count": 1235,
+        "amount": 404337.96
+      },
+      "lastmonth": {
+        "count": 54804,
+        "amount": 4.31100396e+06
+      },
+      "lastweek": {
+        "count": 17457,
+        "amount": 4.15359632e+06
+      },
+      "month": {
+        "count": 45720,
+        "amount": 8.61771169e+06
+      },
+      "total": {
+        "count": 212338,
+        "amount": 2.51882628e+07
+      },
+      "week": {
+        "count": 4010,
+        "amount": 1.43426679e+06
+      },
+      "yesterday": {
+        "count": 2775,
+        "amount": 1.02992883e+06
+      }
+    },
+    "data": {
+      "current": [
+        {
+          "amount": "40810.29",
+          "count": "81",
+          "item": "0"
+        },
+        {
+          "amount": "3711.30",
+          "count": "42",
+          "item": "1"
+        },
+        {
+          "amount": "3383.24",
+          "count": "25",
+          "item": "2"
+        },
+        {
+          "amount": "686.90",
+          "count": "18",
+          "item": "3"
+        },
+        {
+          "amount": "287.69",
+          "count": "8",
+          "item": "4"
+        },
+        {
+          "amount": "529.80",
+          "count": "7",
+          "item": "5"
+        },
+        {
+          "amount": "1800.70",
+          "count": "25",
+          "item": "6"
+        },
+        {
+          "amount": "4170.87",
+          "count": "50",
+          "item": "7"
+        },
+        {
+          "amount": "10100.91",
+          "count": "71",
+          "item": "8"
+        },
+        {
+          "amount": "76627.02",
+          "count": "125",
+          "item": "9"
+        },
+        {
+          "amount": "59314.56",
+          "count": "248",
+          "item": "10"
+        },
+        {
+          "amount": "96732.68",
+          "count": "229",
+          "item": "11"
+        },
+        {
+          "amount": "46963.95",
+          "count": "206",
+          "item": "12"
+        },
+        {
+          "amount": "59218.05",
+          "count": "100",
+          "item": "13"
+        }
+      ],
+      "prev": [
+        {
+          "amount": "116201.86",
+          "count": "73",
+          "item": "0"
+        },
+        {
+          "amount": "21295.77",
+          "count": "65",
+          "item": "1"
+        },
+        {
+          "amount": "5789.96",
+          "count": "29",
+          "item": "2"
+        },
+        {
+          "amount": "4149.90",
+          "count": "18",
+          "item": "3"
+        },
+        {
+          "amount": "751.00",
+          "count": "11",
+          "item": "4"
+        },
+        {
+          "amount": "1314.90",
+          "count": "8",
+          "item": "5"
+        },
+        {
+          "amount": "2425.75",
+          "count": "13",
+          "item": "6"
+        },
+        {
+          "amount": "1926.87",
+          "count": "36",
+          "item": "7"
+        },
+        {
+          "amount": "12415.59",
+          "count": "71",
+          "item": "8"
+        },
+        {
+          "amount": "31612.80",
+          "count": "115",
+          "item": "9"
+        },
+        {
+          "amount": "112251.70",
+          "count": "289",
+          "item": "10"
+        },
+        {
+          "amount": "72514.94",
+          "count": "188",
+          "item": "11"
+        },
+        {
+          "amount": "65300.79",
+          "count": "187",
+          "item": "12"
+        },
+        {
+          "amount": "70501.21",
+          "count": "164",
+          "item": "13"
+        },
+        {
+          "amount": "87887.98",
+          "count": "193",
+          "item": "14"
+        },
+        {
+          "amount": "68176.08",
+          "count": "152",
+          "item": "15"
+        },
+        {
+          "amount": "83766.24",
+          "count": "161",
+          "item": "16"
+        },
+        {
+          "amount": "55708.15",
+          "count": "153",
+          "item": "17"
+        },
+        {
+          "amount": "40949.68",
+          "count": "142",
+          "item": "18"
+        },
+        {
+          "amount": "15982.69",
+          "count": "149",
+          "item": "19"
+        },
+        {
+          "amount": "52596.38",
+          "count": "142",
+          "item": "20"
+        },
+        {
+          "amount": "43073.54",
+          "count": "160",
+          "item": "21"
+        },
+        {
+          "amount": "28165.00",
+          "count": "139",
+          "item": "22"
+        },
+        {
+          "amount": "35170.05",
+          "count": "117",
+          "item": "23"
+        }
+      ]
+    },
+    "config": {
+      "data_charge": "on",
+      "data_demo": "off",
+      "data_matrix": "off",
+      "panel1": "charts_today",
+      "panel2": "history",
+      "playsound": "_",
+      "realtime_orders": "on",
+      "theme": "01",
+      "today_count": "on"
+    },
+    "channel_count": {},
+    "channel_amount": {}
+  }
+}

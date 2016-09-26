@@ -12,7 +12,7 @@ export default class Today extends React.Component {
 
         return (
     		<div className="today">
-    			<Mainamount data = { this.props.amount } />
+    			<Mainamount data = { this.props.amount } rem = {this.props.rem}/>
     			<Count data = { this.props.count } />
     		</div>
 

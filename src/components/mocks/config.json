@@ -1,26 +1,93 @@
 {
+    "newpanel": [
+        {
+            "cols": [
+                {"width": 0.33,"id": "01"},
+                {"width": 0.67,"id": "02"}
+            ],
+            "height": 0.15
+        },
+        {
+            "cols": [
+                {"width": 0.5,"id": "03"},
+                {"width": 0.5,"id": "05"}
+            ],
+            "height": 0.5
+        },
+        {
+            "cols": [
+                {
+                    "width": 1,
+                    "id": "09",
+                    "css": {
+                        "height": 0.8,
+                        "position": "absolute",
+                        "top": 0.15,
+                        "border": "1px solid red",
+                        "width": "100%"
+                    }
+                }
+            ],
+            "height": 0.8,
+            "position": "absolute"
+        },
+        {
+            "cols": [
+                {"width": 1,"id": "04"}
+            ],
+            "height": 0.35
+        }
+    ],
+    "border": true,
+    "theme": "01",
     "panel": {
-        "type": 1,   
-        "panel_ids": ["01", "02", "03"],
-        "theme": "02"
+        "type": 1,
+        "panel_ids": ["01", "02", "03", "04"],
+        "theme": "01"
     },
     "components": [{
-        "type": "today",
-        "to_panel": "01"
+        "type": "count",
+        "to_panel": "01",
+        "css":{
+            "position": "absolute",
+            "left": "0.5rem",
+            "bottom": "0.05rem",
+            "color": "#ff0000"
+        }
+    }, {
+        "type": "amount",
+        "to_panel": "02",
+        "css":{}
     }, {
         "type": "charts_today",
-        "to_panel": "02"
+        "to_panel": "03",
+        "css":{}
     }, {
         "type": "history",
-        "to_panel": "03"
+        "to_panel": "04",
+        "css":{
+            
+        }
+    }, {
+        "type": "charts_today",
+        "to_panel": "05",
+        "css":{
+            "position": "absolute",
+            "right": "0.5rem",
+            "top": "0.05rem"
+        }
+    }, {
+        "type": "barrage",
+        "to_panel": "09",
+        "css":{}
     }],
     "data": {
         "current": [{
-            "amount": "94359.90",
+            "amount": "204359.90",
             "count": "174",
             "item": "0"
         }, {
-            "amount": "85964.60",
+            "amount": "25964.60",
             "count": "27",
             "item": "1"
         }, {
@@ -40,7 +107,7 @@
             "count": "10",
             "item": "5"
         }, {
-            "amount": "628.78",
+            "amount": "12628.78",
             "count": "12",
             "item": "6"
         }, {
@@ -176,33 +243,48 @@
     },
     "date": "2016/9/18",
     "status": {
-      "day": {
-        "count": 1304,
-        "amount": 358060.09
-      },
-      "lastmonth": {
-        "count": 54804,
-        "amount": 4.31100396e+06
-      },
-      "lastweek": {
-        "count": 16557,
-        "amount": 2.1849127e+06
-      },
-      "month": {
-        "count": 40339,
-        "amount": 6.79416319e+06
-      },
-      "total": {
-        "count": 206958,
-        "amount": 2.33647153e+07
-      },
-      "week": {
-        "count": 16086,
-        "amount": 3.76431461e+06
-      },
-      "yesterday": {
-        "count": 2355,
-        "amount": 649778.24
-      }
-    }
+        "day": {
+            "count": 1304,
+            "amount": 358060.09
+        },
+        "lastmonth": {
+            "count": 54804,
+            "amount": 4.31100396e+06
+        },
+        "lastweek": {
+            "count": 16557,
+            "amount": 2.1849127e+06
+        },
+        "month": {
+            "count": 40339,
+            "amount": 6.79416319e+06
+        },
+        "total": {
+            "count": 206958,
+            "amount": 2.33647153e+07
+        },
+        "week": {
+            "count": 36086,
+            "amount": 3.76431461e+06
+        },
+        "yesterday": {
+            "count": 2355,
+            "amount": 649778.24
+        }
+    },
+    "orderlist": [{
+        "amount": 10,
+        "ip": "42.49.126.79",
+        "id": "hdpawuksuk4obbbdql565pjl",
+        "order": "20160920_a62ca6878c84c69a7ce845e3_uid_48867",
+        "time": 1474349626,
+        "subject": "网盘者(wpz.cc)充值Z币:100个,会员ID:48867"
+    }, {
+        "amount": 100,
+        "ip": "58.243.254.210",
+        "id": "ebcvut5hwetnfmy4mybjv76a",
+        "order": "201609201331267826",
+        "time": 1474349624,
+        "subject": "201609201331267826"
+    }]
 }

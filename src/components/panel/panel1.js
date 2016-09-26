@@ -54,6 +54,9 @@ export default class panel extends React.Component {
                 <div className = {'head-view panel' + this.props.config.panel.panel_ids[0]} style = { head_view_style } >
                     <Component type = {compents[0]} data = {this.props.config} rem = {this.state.rem}/>
                 </div>
+                <div className= {'barrage-view panel' + this.props.config.panel.panel_ids[3]} >
+                    <Component type = {compents[3]} data = {this.props.config} rem = {this.state.rem}/>
+                </div>
                 <div className = {'main-view panel' + this.props.config.panel.panel_ids[1]} style = { main_view_stype } >
                     <Component type = {compents[1]} data = {this.props.config} rem = {this.state.rem}/>
                 </div > 

@@ -1,0 +1,32 @@
+.main-amount {
+/*    color: #fff;*/
+    bottom: 2.5rem;
+    height: 7rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 0.5rem;
+}
+.main-amount {
+    font-family: "Courier New", Courier, mono;
+    font-weight: bold;
+}
+
+.main-amount .a, .main-amount .m-a {
+    position: absolute;
+    right: 3.2rem;
+    top: 2.5rem;
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+.main-amount .b {
+    position: absolute;
+    right: 0;
+    top: 3.5rem;
+    font-size: 2rem;
+}
+
+.main-amount .m b {
+    float: right;
+    position: relative;
+}

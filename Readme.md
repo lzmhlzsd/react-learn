@@ -1,0 +1,5 @@
+组件类型：
+today
+charts_today
+charts_week
+charts_month

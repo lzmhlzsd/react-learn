@@ -1,0 +1,31 @@
+{
+  "result": {
+    "account": "@total",
+    "from": 1474349624,
+    "to": 1474349626,
+    "count": 1,
+    "amount": 100,
+    "channel_count": {},
+    "channel_amount": {},
+    "last": [
+      {
+        "amount": 10,
+        "ip": "42.49.126.79",
+        "id": "hdpawuksuk4obbbdql565pjl",
+        "order": "20160920_a62ca6878c84c69a7ce845e3_uid_48867",
+        "time": 1474349626,
+        "subject": "网盘者(wpz.cc)充值Z币:100个,会员ID:48867"
+      },
+      {
+        "amount": 100,
+        "ip": "58.243.254.210",
+        "id": "ebcvut5hwetnfmy4mybjv76a",
+        "order": "201609201331267826",
+        "time": 1474349624,
+        "subject": "201609201331267826"
+      }
+    ],
+    "refresh": false,
+    "config": null
+  }
+}

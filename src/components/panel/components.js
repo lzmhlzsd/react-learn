@@ -2,6 +2,9 @@ import React from 'react';
 import Today from '../today/today';
 import Charts from '../charts/charts';
 import History from '../history/history';
+import Barrage from '../barrage/barrage';
+import Count from '../count/count';
+import Amount from '../amount/amount';
 import u from 'underscore';
 
 export default class component extends React.Component {
@@ -12,15 +15,16 @@ export default class component extends React.Component {
 	render() {
 		let child_comp;
 		switch(this.props.type){
-			case "today":
-				let amount = 0, count = 0;
-				var current = this.props.data.data.current;
-				for(var i=0; i< current.length; i++){
-					amount += parseFloat(current[i].amount);
-					count += parseInt(current[i].count);
-				}
-				child_comp = <Today amount = {amount} count = {count} />;
-				break;
+			// case "today":
+			// 	let amount = 0, count = 0;
+			// 	var current = this.props.data.data.current;
+			// 	for(var i=0; i< current.length; i++){
+			// 		amount += parseFloat(current[i].amount);
+			// 		count += parseInt(current[i].count);
+			// 	}
+			// 	console.log('rem: ', this.props.rem)
+			// 	child_comp = <Today amount = {amount} count = {count} rem = {this.props.rem}/>;
+			// 	break;
 			case "charts_today":
 			case "charts_week":
 			case "charts_month":
@@ -68,7 +72,7 @@ export default class component extends React.Component {
 						}
 					}
 					//console.log('更新主题： ', this.props.data.panel.theme)
-					child_comp = <Charts data = {option} theme = {this.props.data.panel.theme}/>;
+					child_comp = <Charts data = {option} theme = {this.props.data.theme} dstyle={this.props.dstyle}/>;
 				}
 				else if(this.props.type == "charts_month"){
 
@@ -83,6 +87,27 @@ export default class component extends React.Component {
 			case "history":
 				child_comp = <History {...this.props.data.status}/>
 				break;
+			case "barrage":
+			console.log(this.props.colstyle.css)
+				child_comp = <Barrage orderlist = {this.props.data.orderlist} rem = {this.props.rem} theme = {this.props.data.panel.theme} height = {this.props.colstyle.css.height}/>;
+				break
+			case "count":
+				var count = 0;
+				var current = this.props.data.data.current;
+				for(var i=0; i< current.length; i++){
+					count += parseInt(current[i].count);
+				}
+				child_comp = <Count data = {count} dstyle={this.props.dstyle}/>
+				break
+			case "amount":
+				var amount = 0;
+				var current = this.props.data.data.current;
+				for(var i=0; i< current.length; i++){
+					amount += parseFloat(current[i].amount);
+				}
+				console.log('rem: ', this.props.rem)
+				child_comp = <Amount data = {amount} rem ={this.props.rem}/>
+				break
 		}
 		return (
 			<div className = "component" >

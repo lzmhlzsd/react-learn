@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Charts from './components/charts';
 
-import Panel from './components/panel/panel';
+//import Panel from './components/panel/panel';
+import Panel from './components/panel/newpanel';
 
 import './main.css';
 
